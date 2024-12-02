@@ -54,7 +54,7 @@
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -217,7 +217,8 @@
     border-radius: 12px;
     backdrop-filter: blur(34px);
     background: rgba(15, 12, 23, 0.14);
-    padding: 12px 0 12px 0;
+    padding: 12px;
+    margin: 20px 58.5px;
 }
 
 .identity {
@@ -240,7 +241,7 @@
     background-color: #1a1a1a;
     color: #d4d4d4;
     border: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -300,7 +301,7 @@
 /* nav bar css end  */
 /* hero section css start */
 .hero-wrapper {
-    padding: 64px 124px 100px 124px;
+    padding: 68px 168px 100px 168px;
 
 }
 
@@ -308,42 +309,33 @@
     line-height: 120%;
     letter-spacing: 0%;
     margin-top: 8px;
-    background: linear-gradient(180deg, rgb(243, 60, 192), rgb(67, 73, 255));
+    
+        background: linear-gradient(180deg, #F33CC0 13.43%, #4349FF 73.37%, #F33CC0 13.43%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    transition: background 0.5s ease, transform 0.3s ease;
-    width: 80%;
-    margin: 0 auto;
-
+    margin-bottom: 24px;
+    transition: background-position 0.8s ease-in-out;
+    background-size: 100% 164%;
+    background-position: top;
+  position: relative;
 }
 
 .identity-hub:hover {
-    background: linear-gradient(180deg, rgb(67, 73, 255), rgb(243, 60, 192));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    transition: background 0.5s ease, transform 0.3s ease;
+ background-position: bottom;
 }
 
 
 .linea {
-    width: 30%;
-    height: 8px;
-    bottom: -9%;
-    left: 37%;
-    /* Center adjusted */
-    border-radius: 50% 50% 0 0;
-    background: linear-gradient(90deg, rgb(67, 73, 255), rgb(243, 60, 192));
+
+    left: 46%;
+    top: 100%;
     background-size: 200%;
     /* Ensure enough space for smooth animation */
     animation: gradient-move 5s linear infinite;
     /* Gradient animation */
     transition: transform 0.2s ease;
     /* Smooth shake effect */
-    animation: shake 3s ease infinite;
     animation: revealImage 5s infinite;
 }
 
@@ -371,7 +363,7 @@
 
     75% {
         clip-path: inset(0 0 0 100%);
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
@@ -399,8 +391,8 @@
     color: rgb(202, 198, 221);
     line-height: 140%;
     letter-spacing: 0%;
-    width: 75%;
     margin: 0 auto 28px auto;
+    padding: 0 60px;
 }
 
 .hero-btn-div {
@@ -421,7 +413,7 @@
 }
 
 .img-wrapper {
-    margin-top: 10%;
+    margin-top: 15%;
 
 }
 
@@ -440,16 +432,16 @@
     width: 100%;
 }
 .boximg {
-    width: 35%;
+    width: 28%;
 }
 /* Animation for spinning */
 @keyframes spin {
     0% {
-        transform: rotate(0deg) translate(260px) rotate(0deg);
+        transform: rotate(0deg) translate(220px) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg) translate(260px) rotate(-360deg);
+        transform: rotate(360deg) translate(220px) rotate(-360deg);
     }
 }
 
@@ -462,19 +454,19 @@
 }
 
 .one {
-    transform: rotate(0deg) translate(260px) rotate(0deg);
+    transform: rotate(0deg) translate(220px) rotate(0deg);
 }
 
 .two {
-    transform: rotate(90deg) translate(260px) rotate(-90deg);
+    transform: rotate(90deg) translate(220px) rotate(-90deg);
 }
 
 .three {
-    transform: rotate(180deg) translate(260px) rotate(-180deg);
+    transform: rotate(180deg) translate(220px) rotate(-180deg);
 }
 
 .four {
-    transform: rotate(270deg) translate(260px) rotate(-270deg);
+    transform: rotate(270deg) translate(220px) rotate(-270deg);
 }
 
 .one {
@@ -558,23 +550,23 @@
 }
 
 .circle {
-    width: 4%;
-    height: 4%;
+    width: 24px;
+    height: 24px;
     border-radius: 100%;
     background: linear-gradient(to bottom right, #66e2a3, #394755);
     top: 46%;
-    left: -1.8%;
+    left: -0.8%;
 }
 
 .circlea {
     top: 26%;
-    left: 93%;
+    left: 93.5%;
 }
 
 .circleb {
-    width: 3%;
+    width: 16px;
+    height: 16px;
     background: linear-gradient(to bottom right, #c4684b, #394755);
-    height: 3%;
     top: 9%;
 }
 
@@ -585,7 +577,13 @@
     background: linear-gradient(to bottom right, #c4684b, #394755);
     left: 87%;
 }
-
+.circled{
+    height: 12px;
+    width: 12px;
+    top: 41%;
+    left: 16.5%;
+    background: linear-gradient(180deg, #b9aedf 0%, #1a1a32 100%);
+}
 /* Container for the colorful box */
 .colorful-box {
     position: relative;
@@ -1536,9 +1534,6 @@
     transition: transform 0.2s ease;
     /* Smooth shake effect */
     animation: revealImage 5s infinite;
-
-
-
 }
 
 .first-circle {
