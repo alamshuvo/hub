@@ -758,11 +758,12 @@
     width: 100%;
     height: 2px;
     /* Border height */
-    background-color: ;
+ 
     /* Border color */
     transition: width 0.3s ease;
-    /* Smooth animation */
+     
     border-bottom: 1px solid white;
+    
 }
 
 .aa::after {
